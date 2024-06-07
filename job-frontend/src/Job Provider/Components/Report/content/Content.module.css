@@ -1,0 +1,94 @@
+.rowStyle {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.repo {
+  display: flex;
+  align-items: center;
+}
+
+.span11 {
+  font-size: 1.5rem;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border: 2px solid #007bff;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttonsty, .csvsty {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.buttonsty:hover, .csvsty:hover {
+  background-color: #0056b3;
+}
+
+.csvsty a {
+  color: white;
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tableBox {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  overflow-x: auto;
+}
+
+.tableHeader th {
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  padding: 12px 10px;
+  text-align: center;
+}
+
+.tableBody tr {
+  background-color: white;
+  text-align: center;
+  color: #333;
+}
+
+@media screen and (max-width: 768px) {
+  .rowStyle, .repo, .actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .span11, .buttonsty, .csvsty {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .tableBox {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .tableBox {
+    padding: 10px;
+  }
+
+  .tableHeader th, .tableBody td {
+    padding: 8px;
+  }
+}

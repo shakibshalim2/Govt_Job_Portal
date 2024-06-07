@@ -1,0 +1,84 @@
+.form-container {
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.field-container {
+  margin-bottom: 20px;
+}
+
+.input, .select {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #bbbbbb;
+  border-radius: 6px;
+  background-color: #fcfcfc;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input:focus, .select:focus {
+  border-color: #0056b3;
+  background-color: #ffffff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.select {
+  appearance: none;
+  cursor: pointer;
+  position: relative;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2048 2048"%3E%3Cpath d="M2048 384h-2048l1024 1024l1024-1024zm0 0v128h-2048v-128h2048z" fill="%230056b3"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px 12px;
+}
+
+.submitBtn {
+  padding: 12px 30px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: normal;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  transition: all 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #0056b3;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.submitBtn:active {
+  transform: translateY(3px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.error-message {
+  color: #c12d2d;
+  font-size: 0.9rem;
+}
+
+.requiredField::after {
+  content: " *";
+  color: #e83e8c;
+}
